@@ -3,12 +3,11 @@
 - Implemented DQN algorithm in Python, using the Pytorch library for neural networks and training tasks
 - Used the agent to accomplish Cartpole problem from OpenAI Gym library
 
-# Deep Q-Learning
-Learning Goals
+1.  Learning Goals
 - Understand the Deep Q-Learning (DQN) algorithm
 - Understand why Experience Replay and a Target Network are necessary to make Deep Q-Learning work in practice
 
-# Summary
+2.  Summary
 - DQN: Q-Learning but with a Deep Neural Network as a function approximator.
 - Using a non-linear Deep Neural Network is powerful, but training is unstable if we apply it naively.
 - Trick 1 - Experience Replay: Store experience (S, A, R, S_next) in a replay buffer and sample minibatches from it to train the network. This decorrelates the data and leads to better data efficiency. In the beginning, the replay buffer is filled with random experience.
